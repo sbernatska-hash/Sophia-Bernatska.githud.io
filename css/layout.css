@@ -1,24 +1,28 @@
 :root {
-    --txt-color-01: #FFFFFF;                     /*Колір основного тексту*/
+    --txt-color-01: #ffffff;                     /*Колір основного тексту*/
     --txt-color-02: #000000;                     /*Колір тексту інверсія*/
-    --header-color: #(FFFFFF);                     /*Колір заголовків*/
-    --lnk-color: #893;                           /*Колір посилань*/
+    --header-color: #4D8CFF;                     /*Колір заголовків*/
+    --lnk-color: rgb(251, 255, 231);                           /*Колір посилань*/
     --lnk-hover: #341;                           /*Колір при наведенні*/
-    --bg-primary-color: #(4D8CFF);                 /*Колір основного фону*/
-    --bg-secondary-color: #3375F0;               /*Колір фону №2*/
+    --bg-primary-color: #4c88f8;                 /*Колір основного фону*/
+    --bg-secondary-color: #3375F0;
+    --card-bg: rgba(255, 255, 255, 0.15);               /*напівпрозорий фон*/
     --mob-padding: 20px;                           /*Відступи до контенту для смартфонів*/
     --ipad-padding: 50px;                          /*Відступи на планшети*/
     --max-width: 1380px;                           /*Обмеження ширини секцій*/
 }
 
 html, body {
-     font-family: "Montserrat":sans-serif;
+     font-family: "Montserrat", sans-serif;
     font-optical-sizing: auto;
     font-weight: 400;
     font-size: 16px;                               /*Розмір основного тексту*/
     line-height: 1.4;                              /*Міжрядковий інтервал 140%*/
     font-style: normal;;
     color: var( --txt-color-01);
+    background-color: var(--bg-primary-color);
+    margin: 0;                                   /* Важливо: скидаємо базові відступи */
+    padding: 0;
 }
 
 em, i, .italic{
@@ -29,13 +33,14 @@ em, i, .italic{
 h1, h2, h3, h4, h5, h6 {
     font-family: "Montserrat", sans-serif;
   font-optical-sizing: auto;
-  font-weight: 100;
+  font-weight: 450;
   font-style: normal;
+  margin: 0;
 }
 
-h1 { font-size: 2rem; }
-h2 { font-size:1.5rem; }
-h3 { font-size: 1.35rem; }
+h1 { font-size: 6rem; }
+h2 { font-size: 3rem; }
+h3 { font-size: 3rem; }
 header > .inside,
 footer > .inside,
 section > .inside {
@@ -46,7 +51,7 @@ section > .inside {
     padding-right: var(--ipad-padding);
 }
 
-@media (max-width:640px) {
+@media (max-width:680px) {
   
     header > .inside,
     footer > .inside,
@@ -54,4 +59,8 @@ section > .inside {
         padding-left: var(--mob-padding);
         padding-right: var(--mob-padding);
     }
+
+    h1 { font-size: 3.5rem; } 
+    h2 { font-size: 2rem; }
+    h3 { font-size: 1.5rem; }
 }

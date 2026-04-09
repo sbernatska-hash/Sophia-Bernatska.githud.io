@@ -1,14 +1,52 @@
 header .row {
-    border: 1px solid red;
+    min-height: 100vh;
+    width: 100%;
     display: flex;
-    justify-content: center;        /* Вирівнювання по основній осі (main axis) */ 
-    align-items: center;            /* Вирівнювання по ортогональній осі (cross axis) */
-    align-content: center;          /* Вирівнювання усього контенту по ортогональній осі */
-    flex-direction: column;         /* Визначення напряму головної осі */
-    min-height: 100dvh;             /* dvh - dynamic viewport height */
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 30%;
+    padding: 20px;
+
 }
 
 header .col {
-    background-color: #ccc;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
 
+header .col.c1 img {
+    max-width: 100%; /* Забороняємо картинці вилазити за межі колонки */
+    height: auto;    /* Зберігаємо пропорції */
+    object-fit: cover; /* Тепер це працює, бо застосовано до <img> */
+}
+
+
+    header h1,
+    header h3 {
+    text-align: center;
+}
+
+header h1 {
+border-bottom: 4px solid #ffffff;
+margin-bottom: .25em;
+padding-bottom: .25em;
+}
+
+@media screen and (min-width: 680px) {
+    header .row {
+        flex-direction: row; /* Змінює напрямок: тепер елементи стоять у рядку */
+        justify-content: center;
+        gap: 5%;
+
+    }
+
+       header .col {
+        width: 45%;
+        
+    }
+    
 }
