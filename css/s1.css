@@ -1,0 +1,19 @@
+#s1 .inside {
+display: flex;
+justify-content: center;
+align-items: center;
+min-height: 100dvh;
+}
+
+#s1 .about {
+text-align: center;
+font-size: 100;
+line-height:normal ;
+letter-spacing: normal;
+font: weight 42px; 
+color: azure;
+}
+
+.about strong {
+    font-weight: bold;
+}
