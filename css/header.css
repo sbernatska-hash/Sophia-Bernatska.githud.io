@@ -18,15 +18,32 @@ header .col {
     align-items: center;
 }
 
+header .col.c1 {
+    margin-bottom: 40px;
+}
+
+header .img-box {
+    position: relative;
+}
+
+header .name-box {
+    background-color: #0941a9;
+    font-size: 30px;
+    padding: 20px 30px;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    transform: rotate(-20deg) translateY(-5%) translateX(70px);
+}
+
 header .col.c1 img {
     max-width: 100%; /* Забороняємо картинці вилазити за межі колонки */
     height: auto;    /* Зберігаємо пропорції */
-    object-fit: cover; /* Тепер це працює, бо застосовано до <img> */
+    object-fit: cover; /*застосовано до <img> */
 }
 
-
-    header h1,
-    header h3 {
+header h1,
+header h3 {
     text-align: center;
 }
 
@@ -34,19 +51,17 @@ header h1 {
 border-bottom: 4px solid #ffffff;
 margin-bottom: .25em;
 padding-bottom: .25em;
+line-height: 1.1;
 }
 
-@media screen and (min-width: 680px) {
+@media screen and (min-width: 1300px) {
     header .row {
         flex-direction: row; /* Змінює напрямок: тепер елементи стоять у рядку */
         justify-content: center;
         gap: 5%;
-
     }
 
-       header .col {
+    header .col {
         width: 45%;
-        
     }
-    
 }
