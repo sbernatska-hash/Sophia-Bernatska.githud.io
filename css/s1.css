@@ -2,16 +2,18 @@
 display: flex;
 justify-content: center;
 align-items: center;
-min-height: 100dvh;
+min-height: 120dvh;
 }
 
 #s1 .about {
 text-align: center;
-font-size: 100;
-line-height:normal ;
+font-size: 30px;
+line-height:normal;
 letter-spacing: normal;
 font: weight 42px; 
 color: azure;
+padding: 50px 100px;
+max-width: 900px;
 }
 
 .about strong {
